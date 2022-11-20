@@ -52,8 +52,8 @@ a:hover {
 
 .top-container {
   position: relative;
-  padding-top: 50px;
-  padding-left: 30%;
+  padding-top: auto;
+  padding-left: auto;
 
 }
 
@@ -150,8 +150,8 @@ a:hover {
 
 .mySlides{
   border-radius: 15px 50px 30px;
-  height:300px;
-  width: 550px;
+  height:250px;
+  width: 400px;
 }
 
 .profile{
