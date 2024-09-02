@@ -13,3 +13,28 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+// Get the popup element
+const popup = document.getElementById('imagePopup');
+const popupImage = document.getElementById('popupImage');
+const profilePhoto = document.getElementById('openPopup');
+const closeButton = document.getElementsByClassName('close')[0];
+
+// When the user clicks on the profile photo, open the popup
+profilePhoto.onclick = function() {
+    popup.style.display = 'flex'; // Show the popup
+    popupImage.src = 'profile.jfif'; // Set the source of the popup image
+}
+
+// When the user clicks on the close button, close the popup
+closeButton.onclick = function() {
+    popup.style.display = 'none'; // Hide the popup
+}
+
+// When the user clicks anywhere outside of the popup content, close the popup
+window.onclick = function(event) {
+    if (event.target === popup) {
+        popup.style.display = 'none'; // Hide the popup
+    }
+}
